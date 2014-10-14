@@ -7,6 +7,6 @@
 
 <% if params[:search] %>
   <% @foods.each do |food| %>
-    <li><%= link_to food.name, food_path(food) %></li>
+    <li><%= link_to food.name, food_path(food.slug) %></li>
   <% end %>
 <% end %>
