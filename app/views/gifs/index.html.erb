@@ -1,0 +1,6 @@
+<% @gifs.each do |gif| %>
+  <li><%= gif.name %>: <br>
+    <%= image_tag gif.image_url %>
+    <br><%= gif.truthy %>
+  </li>
+<% end %>
