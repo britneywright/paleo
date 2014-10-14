@@ -1,4 +1,4 @@
-<%= form_tag foods_path, :method => :get do %>
+<%= form_tag foods_path, :method => :get, :id => "foods_search" do %>
   <p>
     <%= text_field_tag :search %>
     <%= submit_tag "Search", :name => nil %>
@@ -6,7 +6,7 @@
 <% end %>
 
 <% if params[:search] %>
-  <% @foods.each do |food| %>
-    <li><%= link_to food.name, food_path(food) %></li>
-  <% end %>
+<%= render 'foods' %>
+<% else %>
+<div id="foods"><%= render 'foods' %></div>
 <% end %>

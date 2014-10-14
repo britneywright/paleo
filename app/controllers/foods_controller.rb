@@ -48,14 +48,22 @@ class FoodsController < ApplicationController
     format.json { head :no_content }
   end
 
+  def to_param
+    slug
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_food
-      @food = Food.find(params[:id])
+      @food = Food.find_by_slug(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def food_params
       params.require(:food).permit(:name, :paleo)
+    end
+  
+    def slug=(slug)
+      slug = name.parameterize
     end
 end
