@@ -7,11 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 foods = Food.create!([
-  {name: "bread", paleo: false},
-  {name: "banana", paleo: true},
-  {name: "apple", paleo: true},
-  {name: "eggs", paleo: true},
-  {name: "candy", paleo: false}
+  {name: "bread", paleo: false, slug: "bread"},
+  {name: "banana", paleo: true, slug: "banana"},
+  {name: "apple", paleo: true, slug: "apple"},
+  {name: "eggs", paleo: true, slug: "eggs"},
+  {name: "candy", paleo: false, slug: "candy"}
 ])
 
 gifs = Gif.create([
