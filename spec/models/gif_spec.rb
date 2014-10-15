@@ -18,11 +18,18 @@ describe Gif do
     expect(gif).to be_invalid
   end
 
-  it "gets a truthy image" #do
-    #expect(Gif.truthiness(true)).to be_truthy
-  #end
+  describe "gets one image based on given truthiness" do
+    before :each do 
+      @positive = Gif.create(name: "one gif", image_url: "one.gif", truthy: true)
+      @negative = Gif.create(name: "two gif", image_url: "two.gif", truthy: false)
+    end
 
-  it "gets a falsey image" #do
-    #expect(Gif.truthiness(false)).to be_falsey
-  #end
+    it "gets a truthy image" do
+      expect(Gif.truthiness(true)).to eq @positive
+    end
+
+    it "gets a falsey image" do
+      expect(Gif.truthiness(false)).to eq @negative
+    end
+  end
 end

@@ -16,6 +16,11 @@ describe Food do
     expect(food).to be_invalid
   end
 
+  it "has a unique name" do
+    Food.create(name:"bread", paleo: true)
+    expect(food).to be_invalid
+  end
+
   it "is invalid without a paleo value" do
     food.paleo = nil
     expect(food).to be_invalid
