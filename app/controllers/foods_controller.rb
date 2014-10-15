@@ -60,10 +60,6 @@ class FoodsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def food_params
-      params.require(:food).permit(:name, :paleo)
-    end
-  
-    def slug=(slug)
-      slug = name.parameterize
+      params.require(:food).permit(:name, :paleo, :slug)
     end
 end

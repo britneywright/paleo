@@ -32,5 +32,10 @@ describe Food do
 
   it "doesn't find a food" do
     expect(Food.search("candy")).to eq []
-  end  
+  end
+
+  it "has a slug" do
+    twinkie = Food.create(name: 'Twinkie', paleo: true)
+    expect(twinkie.slug).to eq "twinkie"
+  end
 end

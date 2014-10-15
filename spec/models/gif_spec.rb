@@ -18,11 +18,11 @@ describe Gif do
     expect(gif).to be_invalid
   end
 
-  it "gets a truthy image" do
-    expect(Gif.truthiness(true)).to be_truthy
-  end
+  it "gets a truthy image" #do
+    #expect(Gif.truthiness(true)).to be_truthy
+  #end
 
-  it "gets a falsey image" do
-    expect(Gif.truthiness(false)).to be_falsey
-  end
+  it "gets a falsey image" #do
+    #expect(Gif.truthiness(false)).to be_falsey
+  #end
 end
