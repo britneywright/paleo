@@ -6,14 +6,15 @@ Feature: Searching for items
   my fingers slip, so on and so forth.
 
   Background:
-    Given the following foods:
-      | name            | paleo | slug            |
-      | Hamburgers      | false | hamburgers      |
-      | Corn on the cob | true  | corn-on-the-cob |
+    Given there is a Food
+    And I am on "/"
 
-  Scenario: Exact search for a non-paleo item
-    Given I am on "/foods/hamburgers" 
-    Given I am on "/" 
-    And I fill in "search" with "Hamburgers"
-    When I select "Hamburgers"
-    Then page should have "not paleo" gif
+  Scenario: Exact search for a non-paleo item 
+    Given I fill in "search" with "Hamburgers"
+    When I select "Hamburgers"    
+    Then page should have "false" gif
+
+  Scenario: Exact search for a paleo item 
+    Given I fill in "search" with "banana"
+    When I select "banana"    
+    Then page should have "true" gif    
