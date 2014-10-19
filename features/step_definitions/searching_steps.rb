@@ -10,10 +10,6 @@ When /^I fill in "(.*?)" with "(.*?)"$/  do |field, food|
   fill_in field, :with => food
 end
 
-Then /^show me the page$/ do
-   save_and_open_page
-end
-
 And /^I select "(.*?)"$/  do |food|
   click_link food
 end

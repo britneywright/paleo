@@ -1,3 +1,7 @@
-<% @foods.each do |food| %>
-  <li><%= link_to food.name, food %></li>
-<% end %>
+<% if @foods.count > 0 %>
+  <% @foods.each do |food| %>
+    <li><%= link_to food.name, food %></li>
+  <% end %>
+<% else %>
+  <p>What is that?</p>
+<% end %>  

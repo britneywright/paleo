@@ -1,3 +1,4 @@
+@javascript
 Feature: Searching for items
 
   It's lunchtime, I feel the hugahz!
@@ -18,7 +19,7 @@ Feature: Searching for items
     When I fill in "search" with "banana"
     And I select "banana"   
     Then page should have "true" gif 
-
+    
   Scenario: Case insensitive search
     When I fill in "search" with "hamBurgers"
     And I select "Hamburgers"
