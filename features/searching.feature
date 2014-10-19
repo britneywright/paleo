@@ -6,15 +6,32 @@ Feature: Searching for items
   my fingers slip, so on and so forth.
 
   Background:
-    Given there is a Food
     And I am on "/"
 
+  @javascript
+  Scenario: Exact search for a paleo item
+    When I fill in "search" with "banana"
+    When I select "banana"   
+    Then page should have "true" gif 
+
+  @javascript
   Scenario: Exact search for a non-paleo item 
-    Given I fill in "search" with "Hamburgers"
+    When I fill in "search" with "Hamburgers"
     When I select "Hamburgers"    
     Then page should have "false" gif
 
-  Scenario: Exact search for a paleo item 
-    Given I fill in "search" with "banana"
-    When I select "banana"    
-    Then page should have "true" gif    
+  Scenario: Case insensitive search
+    When I fill in "search" with "hamBurgers"
+    Then page should have "false" gif
+
+  Scenario: Search for an unknown item 
+    When I fill in "search" with "Power adapters"
+    Then no food is found  
+
+  Scenario: Partial match
+    When I fill in "search" with "Burgers"
+    Then page should have "false" gif
+
+  Scenario: Suggest completions as I type
+    When I fill in "search" with "ba"
+    Then I am suggested "banana" and "bacon"                
