@@ -25,11 +25,11 @@ describe Gif do
     end
 
     it "gets a truthy image" do
-      expect(Gif.truthiness(true)).to eq @positive
+      expect(Gif.truthiness(true)).to eq (@positive || @gif2)
     end
 
     it "gets a falsey image" do
-      expect(Gif.truthiness(false)).to eq @negative
+      expect(Gif.truthiness(false)).to eq (@negative || @gif1)
     end
   end
 end

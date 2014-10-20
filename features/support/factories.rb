@@ -15,9 +15,9 @@ FactoryGirl.define do
   end
 end
 
-food1 = FactoryGirl.build(:food, name: 'Hamburgers', paleo: false, slug: 'hamburgers').save  
-food2 = FactoryGirl.build(:food, name: 'banana', paleo: true, slug: 'banana').save
-food3 = FactoryGirl.build(:food, name: 'bacon', paleo: true, slug: 'bacon').save
+@food1 = FactoryGirl.build(:food, name: 'Hamburgers', paleo: false, slug: 'hamburgers').save  
+@food2 = FactoryGirl.build(:food, name: 'banana', paleo: true, slug: 'banana').save
+@food3 = FactoryGirl.build(:food, name: 'bacon', paleo: true, slug: 'bacon').save
 
-gif1 = FactoryGirl.build(:gif, name: 'Emma Stone No', truthy: false, image_url: 'no/emma-stone-no-professionalfangirls.gif').save
-gif2 = FactoryGirl.build(:gif, name: 'Friends Yes', truthy: true, image_url: 'yes/friends-yes-likegif.gif').save
+@gif1 = FactoryGirl.build(:gif, name: 'Emma Stone No', truthy: false, image_url: 'no/emma-stone-no-professionalfangirls.gif').save
+@gif2 = FactoryGirl.build(:gif, name: 'Friends Yes', truthy: true, image_url: 'yes/friends-yes-likegif.gif').save
