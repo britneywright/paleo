@@ -40,6 +40,26 @@ li {
   opacity: 0;
 }
 
+#search{
+  font-size: 16px;
+  font-family: 'Linux Libertine'!important;
+  font-weight: 400; 
+  border-radius: 2px; 
+  box-shadow: #152FA7;
+}
+
+input[type="submit"]{
+  font-size: 16px;
+  font-family: 'Linux Libertine';
+  font-weight: 400; 
+  border-radius: 2px;  
+  background-color: rgba(255,255,255,0.5);
+}
+
+input:focus{
+  outline-color: #f57e01;
+}
+
 @keyframes bounce {
   0% {
       opacity: 0;
