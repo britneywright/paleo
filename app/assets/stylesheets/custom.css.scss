@@ -6,15 +6,34 @@ body {
   background-image: url(/assets/45-degree-fabric-light.png);
 }
 
+h1{
+  font-family: 'Linux Biolinum';
+  font-style: italic;
+  a {
+  text-decoration: none;
+  color: #000;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #E45F00;
+}
+
+li {
+  list-style: none;
+}
+
 .paleoYes {
   background-color: #f57e01;
   background-image: url(/assets/45-degree-fabric-light.png);
 }
 
-h1{
-  font-family: 'Linux Biolinum';
-  font-style: italic;
+.paleoNo {
+  background-color: #152FA7;
+  background-image: url(/assets/45-degree-fabric-light.png);
 }
+
 .gifResponse{
   animation: bounce 3s 1;
   animation-fill-mode: both;
