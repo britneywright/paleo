@@ -3,52 +3,29 @@ body {
   font-family: 'Linux Libertine';
   font-weight: 400;
   font-size: 18px;
+  background-image: url(/assets/45-degree-fabric-light.png);
+}
+
+.paleoYes {
+  background-color: #f57e01;
+  background-image: url(/assets/45-degree-fabric-light.png);
 }
 
 h1{
   font-family: 'Linux Biolinum';
   font-style: italic;
 }
-
 .gifResponse{
-    -webkit-animation: bounce 3s infinite;
-          animation: bounce 3s infinite;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translate3d(0px 0px 0px);
-            transform: translate3d(0px 0px 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  50% {
-    -webkit-transform: translate3d(30px 0px 0px);
-            transform: translate3d(30px 0px 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translate3d(0px 0px 0px);
-            transform: translate3d(0px 0px 0px);
-  }
+  animation: bounce 3s 1;
+  animation-fill-mode: both;
+  opacity: 0;
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translate3d(0px 0px 0px);
-            transform: translate3d(0px 0px 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  50% {
-    -webkit-transform: translate3d(30px 0px 0px);
-            transform: translate3d(30px 0px 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+      opacity: 0;
   }
   100% {
-    -webkit-transform: translate3d(0px 0px 0px);
-            transform: translate3d(0px 0px 0px);
-  }
+      opacity: 1;
+  }  
 }

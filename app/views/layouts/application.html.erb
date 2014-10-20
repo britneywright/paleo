@@ -5,11 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i/Linux+Biolinum:400,700,400i">
-  <script source="http://www.kirupa.com/js/prefixfree.min.js"></script>
+  <script src="http://www.kirupa.com/js/prefixfree.min.js"></script>
 </head>
 <body>
+  <div id="container">
 <%= render 'layouts/header' %>
 <%= yield %>
-
+</div>
 </body>
 </html>
