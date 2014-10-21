@@ -15,6 +15,6 @@ class Food < ActiveRecord::Base
   end
 
   def self.search(query)
-    where("name like ?", "%#{query}%")
+    where("name like ?", "%#{query}%".downcase)
   end
 end
