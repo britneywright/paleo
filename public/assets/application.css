@@ -1,0 +1,104 @@
+/* line 1, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+body {
+  text-align: center;
+  font-family: 'Linux Libertine';
+  font-weight: 400;
+  font-size: 18px;
+  background-image: url(/assets/45-degree-fabric-light.png);
+}
+
+/* line 9, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+h1 {
+  font-family: 'Linux Biolinum';
+  font-style: italic;
+}
+/* line 12, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 18, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+a {
+  text-decoration: none;
+  color: #E45F00;
+}
+
+/* line 23, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+li {
+  list-style: none;
+}
+
+/* line 27, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+.paleo {
+  background-image: url(/assets/45-degree-fabric-light.png);
+}
+
+/* line 31, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+.notPaleo {
+  background-color: red;
+  color: #fff;
+}
+/* line 34, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+.notPaleo a {
+  color: #fff;
+}
+
+/* line 39, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+.gifResponse {
+  animation: bounce 3s 1;
+  animation-fill-mode: both;
+  opacity: 0;
+  max-width: 100%;
+}
+
+/* line 46, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+#search {
+  font-size: 16px;
+  font-family: "Linux Libertine" !important;
+  font-weight: 400;
+  border-radius: 2px;
+  box-shadow: #152FA7;
+}
+
+/* line 54, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+input[type="submit"] {
+  font-size: 16px;
+  font-family: 'Linux Libertine';
+  font-weight: 400;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 62, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+input:focus {
+  outline-color: #f57e01;
+}
+
+@keyframes bounce {
+  /* line 67, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 70, /Users/britneywright/projects/paleo_foods/app/assets/stylesheets/custom.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
