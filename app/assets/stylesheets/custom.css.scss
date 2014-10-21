@@ -3,7 +3,7 @@ body {
   font-family: 'Linux Libertine';
   font-weight: 400;
   font-size: 18px;
-  background-image: url(/assets/45-degree-fabric-light.png);
+  background-image: image-url('45-degree-fabric-light.png');
 }
 
 h1{
@@ -24,14 +24,16 @@ li {
   list-style: none;
 }
 
-.paleoYes {
-  background-color: #f57e01;
-  background-image: url(/assets/45-degree-fabric-light.png);
+.paleo {
+  background-image: image-url('45-degree-fabric-light.png');
 }
 
-.paleoNo {
-  background-color: #152FA7;
-  background-image: url(/assets/45-degree-fabric-light.png);
+.notPaleo {
+  background-color: red;
+  color: #fff;
+  a{
+    color: #fff;
+  }
 }
 
 .gifResponse{

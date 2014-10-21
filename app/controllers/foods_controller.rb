@@ -6,7 +6,8 @@ class FoodsController < ApplicationController
   end
 
   def show
-    @gif = Gif.truthiness(@food.paleo)
+    @foods = Food.search(params[:search])
+    @gif = Gif.random_for(@food.paleo)
   end
 
   def edit

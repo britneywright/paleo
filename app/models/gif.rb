@@ -6,7 +6,7 @@ class Gif < ActiveRecord::Base
   }
   validates :image_url, uniqueness: true
 
-  def self.truthiness(truthiness)
-    where(truthy: truthiness).sample
+  def self.random_for(truthiness)
+    where(truthy: !!truthiness).sample
   end
 end

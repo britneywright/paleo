@@ -14,6 +14,10 @@ class Food < ActiveRecord::Base
     slug
   end
 
+  def paleo?
+    paleo
+  end
+
   def self.search(query)
     where("name like ?", "%#{query}%".downcase)
   end
