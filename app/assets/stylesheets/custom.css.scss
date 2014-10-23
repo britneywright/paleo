@@ -137,8 +137,12 @@ input:focus{
 
 /** Media Queries **/
 
-@media(orientation: landscape) {
-  body {
-    transform: rotate(-90deg);
+@media only screen
+and (max-device-width : 768px) {
+  .searchArea {
+    width: 100%;
+  }
+  h3#tagline{
+    display: block;
   }
 }
