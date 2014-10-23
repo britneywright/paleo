@@ -21,7 +21,7 @@ h1{
 
 h1#title{
   display: inline;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 h3#tagline{
@@ -57,18 +57,18 @@ li {
   text-align: center;
 }
 
+.searchArea {
+  margin: 0 auto;
+  width: 40%;
+  top: 30%;
+  position: relative;
+}
+
 .gifResponse{
   animation: bounce 3s 1;
   animation-fill-mode: both;
   opacity: 0;
   max-width: 100%;
-}
-
-.searchArea {
-  margin: 0 auto;
-  width: 30%;
-  top: 30%;
-  position: relative;
 }
 
 form{
@@ -80,7 +80,7 @@ form{
 input[type="text"]{
   background: none;
   border: none;
-  flex-grow: 1;
+  flex-grow: 2;
   color: #000;
 }
 
