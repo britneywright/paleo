@@ -1,7 +1,11 @@
-<div class=<%= @food.paleo %>>
-<h2><%= @food.name %></h2>
-<p id="notice"><%= notice %></p>
-<%= image_tag @gif.image_url, class: "gifResponse" %>
-<p>Search Again</p>
-<p><%= render 'search' %></p>
+<div class="foodShow">
+  <div class=<%= @food.paleo %>>
+    <h2><%= @food.name %></h2>
+    <p id="notice"><%= notice %></p>
+    <%= image_tag @gif.image_url, class: "gifResponse" %>
+  </div>
+  <div class="searchArea">
+    <p>Search again?</p>
+    <%= render 'search' %>
+  </div>
 </div>

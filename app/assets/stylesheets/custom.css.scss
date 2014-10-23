@@ -1,9 +1,13 @@
 body {
-  text-align: center;
   font-family: 'Linux Libertine';
   font-weight: 400;
   font-size: 18px;
   background-image: image-url('45-degree-fabric-light.png');
+  height: 100%;
+}
+
+#container {
+  height: 100%;
 }
 
 h1{
@@ -13,6 +17,15 @@ h1{
   text-decoration: none;
   color: #000;
   }
+}
+
+h1#title{
+  display: inline;
+  margin-right: 10px;
+}
+
+h3#tagline{
+  display: inline;
 }
 
 a {
@@ -36,6 +49,14 @@ li {
   }
 }
 
+.true {
+  text-align: center;
+}
+
+.false {
+  text-align: center;
+}
+
 .gifResponse{
   animation: bounce 3s 1;
   animation-fill-mode: both;
@@ -43,26 +64,45 @@ li {
   max-width: 100%;
 }
 
-#search{
-  font-size: 16px;
-  font-family: 'Linux Libertine'!important;
-  font-weight: 400; 
-  border-radius: 2px; 
-  box-shadow: #152FA7;
+.searchArea {
+  margin: 0 auto;
+  width: 30%;
+  top: 30%;
+  position: relative;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+input[type="text"]{
+  background: none;
+  border: none;
+  flex-grow: 1;
+  color: #000;
 }
 
 input[type="submit"]{
-  font-size: 16px;
-  font-family: 'Linux Libertine';
-  font-weight: 400; 
-  border-radius: 2px;  
-  background-color: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.0);
+  border-color: rgba(255,255,255,0.0);
+  border-style: solid;
+  flex-grow: 1;
+  cursor: pointer;
 }
 
 input:focus{
-  outline-color: #f57e01;
+  outline: 0px solid black;
 }
 
+.foodsList {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/** Animations **/
 @keyframes bounce {
   0% {
       opacity: 0;
