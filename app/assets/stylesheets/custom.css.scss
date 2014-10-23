@@ -137,7 +137,7 @@ input:focus{
 
 /** Media Queries **/
 
-@media{orientation: portrait} {
+@media(orientation: portrait) {
   body {
     transform: rotate(-90deg);
   }
