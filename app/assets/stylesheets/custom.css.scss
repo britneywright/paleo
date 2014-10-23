@@ -134,3 +134,11 @@ input:focus{
       opacity: 1;
   }  
 }
+
+/** Media Queries **/
+
+@media{orientation: portrait} {
+  body {
+    transform: rotate(-90deg);
+  }
+}
