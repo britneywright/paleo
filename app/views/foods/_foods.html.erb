@@ -1,4 +1,5 @@
 <div class= "foodsList">
+  <%= paginate @foods %>
   <% if @foods.count > 0 %>
     <% @foods.each do |food| %>
       <li><%= link_to food.name, food %></li>

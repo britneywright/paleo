@@ -2,11 +2,11 @@ class FoodsController < ApplicationController
   before_action :set_food, only: [:show, :edit, :update, :destroy]
 
   def index
-    @foods = Food.search(params[:search]).order("LOWER(name)")
+    @foods = Food.search(params[:search]).order("LOWER(name)").page(params[:page])
   end
 
   def show
-    @foods = Food.search(params[:search])
+    @foods = Food.search(params[:search]).order("LOWER(name)").page(params[:page])
     @gif = Gif.random_for(@food.paleo)
   end
 
