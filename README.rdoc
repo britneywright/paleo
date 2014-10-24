@@ -1,3 +1,0 @@
-== README
-
-Find out if a food is paleo, in an amusing way.
