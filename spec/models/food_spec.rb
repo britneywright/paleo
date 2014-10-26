@@ -7,8 +7,7 @@ describe Food do
   end
 
   it "is invalid without a name" do
-    food = build(:food)
-    food.name = nil
+    food = build(:food, name: nil)
     expect(food).to be_invalid
   end
 
@@ -19,8 +18,7 @@ describe Food do
   end
 
   it "is invalid without a paleo value" do
-    food = build(:food)
-    food.paleo = nil
+    food = build(:food, paleo: nil)
     expect(food).to be_invalid
   end
 

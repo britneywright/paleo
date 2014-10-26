@@ -15,7 +15,7 @@ And /^I select "(.*?)"$/  do |food|
 end
 
 Then /^page should have "(.*?)" gif$/ do |truthy|
-  Gif.truthiness(truthy) 
+  Gif.random_for(truthy) 
 end
 
 Then /^no food is found$/ do
