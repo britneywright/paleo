@@ -6,6 +6,6 @@ FactoryGirl.define do
   end
 end
 
-FactoryGirl.build(:food, name: 'Hamburgers', paleo: false, slug: 'hamburgers')  
-FactoryGirl.build(:food, name: 'banana', paleo: true, slug: 'banana')
-FactoryGirl.build(:food, name: 'bacon', paleo: true, slug: 'bacon')
+FactoryGirl.create(:food, name: 'Hamburgers', paleo: false, slug: 'hamburgers')  
+FactoryGirl.create(:food, name: 'banana', paleo: true, slug: 'banana')
+FactoryGirl.create(:food, name: 'bacon', paleo: true, slug: 'bacon')
