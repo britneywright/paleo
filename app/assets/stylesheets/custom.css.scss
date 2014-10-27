@@ -138,7 +138,7 @@ input:focus{
 
 .foodsList {
   margin: 20px 0;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 /** Animations **/
@@ -156,7 +156,11 @@ input:focus{
 @media only screen
 and (max-device-width : 768px) {
   .searchArea {
-    width: 100%;
+  margin: 0 auto;
+  width: 60%;
+  left: 20%;
+  top: 20%;
+  position: absolute;
   }
   h3#tagline{
     display: block;

@@ -20,6 +20,6 @@ $(function() {
   var bg = Math.floor(Math.random() * 2 + 1);
   $('.home').css({
     'background': ("#fff url('assets/bg/" + bg + ".jpg') no-repeat fixed top center"),
-    'background-size': '100%'
+    'background-size': 'cover'
   });
 });
