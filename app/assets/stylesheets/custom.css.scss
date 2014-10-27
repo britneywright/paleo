@@ -140,6 +140,10 @@ input:focus{
   background-image: image-url('45-degree-fabric-light.png');
 }
 
+.true {
+  text-align: center;
+}
+
 /***Not Paleo Food Pages***/
 .notPaleo {
   background-color: #FF2400;
@@ -151,6 +155,10 @@ input:focus{
   input[type="submit"]{
     color: #FFF;
   }
+}
+
+.false {
+  text-align: center;
 }
 
 .gifResponse{
