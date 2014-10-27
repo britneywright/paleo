@@ -162,7 +162,7 @@ input:focus{
 @media only screen
 and (max-device-width : 768px) {
   .searchArea {
-  width: 60%;
+  min-width: 60%;
   }
   h3#tagline{
     display: block;
