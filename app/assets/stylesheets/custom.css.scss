@@ -1,8 +1,8 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  background-image: url('bg/citrus_and_noodles.jpg');
+  font-size: 15px;
+  background-image: image-url('45-degree-fabric-light.png');
   height: 100%;
   color: #646464;
 }
@@ -36,6 +36,7 @@ h1#title{
 
 h3#tagline{
   display: inline;
+  letter-spacing: 1px;
 }
 
 a {
@@ -52,6 +53,19 @@ p {
   font-weight: 700;
 }
 
+.home {
+  background: #fff url('bg/citrus_and_noodles.jpg') no-repeat fixed top center;
+  background-size: 100%;
+  header {
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee;
+  }
+  .searchArea {
+    background: rgba(255,255,255,0.8);
+    padding: 0 5px 5px;
+  }
+}
 .paleo {
   background-image: image-url('45-degree-fabric-light.png');
 }
