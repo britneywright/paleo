@@ -2,9 +2,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  background-image: image-url('45-degree-fabric-light.png');
+  background-image: url('bg/citrus_and_noodles.jpg');
   height: 100%;
-  color: #3c3c3c
+  color: #646464;
 }
 
 header {
@@ -19,7 +19,7 @@ h1{
   font-style: italic;
   a {
   text-decoration: none;
-  color: #E45F00;
+  color: #F19F33;
   }
 }
 
@@ -40,7 +40,7 @@ h3#tagline{
 
 a {
   text-decoration: none;
-  color: #E45F00;
+  color: #F19F33;
 }
 
 li {
@@ -57,13 +57,14 @@ p {
 }
 
 .notPaleo {
-  background-color: red;
-  color: #fff;
+  background-image: image-url('45-degree-fabric-light.png');
+  background-color: #FF2400;
+  color: #FFF;
   a{
-    color: #fff;
+    color: #FFF;
   }
   input[type="submit"]{
-    color: #fff;
+    color: #FFF;
   }
 }
 
@@ -92,7 +93,7 @@ p {
 form{
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #3c3c3c;
+  border-bottom: 2px solid #646464;
 }
 
 input {
@@ -114,6 +115,7 @@ input[type="submit"]{
   border-style: solid;
   flex-grow: 1;
   cursor: pointer;
+  color: #646464;  
 }
 
 input:focus{
