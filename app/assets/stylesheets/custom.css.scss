@@ -36,7 +36,7 @@ h1#title{
 
 h3#tagline{
   display: inline;
-  letter-spacing: 1px;
+  letter-spacing: 1pt;
 }
 
 a {
@@ -56,10 +56,18 @@ p {
 .home {
   background: #fff url('bg/citrus_and_noodles.jpg') no-repeat fixed top center;
   background-size: 100%;
-  header {
+  h1#title {
+    color: #fff;
     text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee;
+    1px 0px 1px #CCC, 0px 1px 1px #EEE, 
+    2px 1px 1px #CCC, 1px 2px 1px #EEE,
+    3px 2px 1px #CCC, 2px 3px 1px #EEE;
+  }
+  h3#tagline {
+    color: #fff;
+    text-shadow: 
+    1px 0px 1px #777, 0px 1px 1px #333, 
+    2px 1px 1px #777, 1px 2px 1px #333;
   }
   .searchArea {
     background: rgba(255,255,255,0.8);
@@ -91,10 +99,8 @@ p {
 }
 
 .searchArea {
-  margin: 0 auto;
+  margin: 10% auto;
   width: 40%;
-  top: 30%;
-  position: relative;
 }
 
 .gifResponse{
@@ -156,11 +162,7 @@ input:focus{
 @media only screen
 and (max-device-width : 768px) {
   .searchArea {
-  margin: 0 auto;
   width: 60%;
-  left: 20%;
-  top: 20%;
-  position: absolute;
   }
   h3#tagline{
     display: block;
