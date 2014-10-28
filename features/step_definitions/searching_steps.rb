@@ -1,5 +1,9 @@
-Given /^there is a Food$/ do
-  puts Food.all.inspect
+Given /^there is content in the database$/ do
+  Food.find_or_create_by(name: 'Hamburgers', paleo: false, slug: 'hamburgers')
+  Food.find_or_create_by(name: 'banana', paleo: true, slug: 'banana')
+  Food.find_or_create_by(name: 'bacon', paleo: true, slug: 'bacon')
+  Gif.find_or_create_by(name: 'Friends Yes', truthy: true, image_url: 'yes.gif')
+  Gif.find_or_create_by(name: 'Emma Stone No', truthy: false, image_url: 'no.gif')
 end
 
 Given(/^I am on (.+)$/) do |page_name|
@@ -19,7 +23,7 @@ Then /^page should have "(.*?)" gif$/ do |truthy|
 end
 
 Then /^no food is found$/ do
-  expect(page).to have_content "What is that?"
+  page.has_content?("What is that?")
 end
 
 Then /^I am suggested "(.*?)" and "(.*?)"$/ do |food1, food2|

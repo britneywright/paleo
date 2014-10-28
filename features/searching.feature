@@ -6,6 +6,7 @@ Feature: Searching for items
   my fingers slip, so on and so forth.
 
   Background:
+    Given there is content in the database
     And I am on "/"
 
   Scenario: Exact search for a non-paleo item 
