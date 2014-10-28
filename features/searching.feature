@@ -1,3 +1,4 @@
+@javascript
 Feature: Searching for items
 
   It's lunchtime, I feel the hugahz!

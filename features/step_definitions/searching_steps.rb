@@ -1,9 +1,10 @@
 Given /^there is content in the database$/ do
+  DatabaseCleaner.clean
   Food.find_or_create_by(name: 'Hamburgers', paleo: false, slug: 'hamburgers')
   Food.find_or_create_by(name: 'banana', paleo: true, slug: 'banana')
   Food.find_or_create_by(name: 'bacon', paleo: true, slug: 'bacon')
-  Gif.find_or_create_by(name: 'Friends Yes', truthy: true, image_url: 'yes.gif')
-  Gif.find_or_create_by(name: 'Emma Stone No', truthy: false, image_url: 'no.gif')
+  Gif.find_or_create_by(name: 'Friends Yes', truthy: true, image_url: 'yes/friends-yes-likegif.gif')
+  Gif.find_or_create_by(name: 'Emma Stone No', truthy: false, image_url: 'no/emma-stone-no-professionalfangirls.gif')
 end
 
 Given(/^I am on (.+)$/) do |page_name|
@@ -12,6 +13,7 @@ end
 
 When /^I fill in "(.*?)" with "(.*?)"$/  do |field, food|
   fill_in field, :with => food
+  click_button "Search"
 end
 
 And /^I select "(.*?)"$/  do |food|
@@ -23,7 +25,7 @@ Then /^page should have "(.*?)" gif$/ do |truthy|
 end
 
 Then /^no food is found$/ do
-  page.has_content?("What is that?")
+  expect(page).to have_content("What is that?")
 end
 
 Then /^I am suggested "(.*?)" and "(.*?)"$/ do |food1, food2|
