@@ -4,4 +4,8 @@ FactoryGirl.define do
     truthy false
     image_url 'no/sherlock-no-giphy.gif'
   end
+
+  factory :invalid_gif do
+    name nil
+  end
 end

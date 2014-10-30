@@ -4,4 +4,8 @@ FactoryGirl.define do
     paleo true
     slug  "fish"
   end
+
+  factory :invalid_food do
+    name nil
+  end
 end
