@@ -3,9 +3,9 @@ FactoryGirl.define do
     name 'fish'
     paleo true
     slug  "fish"
-  end
 
-  factory :invalid_food do
-    name nil
+    factory :invalid_food do
+      name nil
+    end
   end
 end
